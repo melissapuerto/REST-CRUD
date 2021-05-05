@@ -1,0 +1,37 @@
+<HTML>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Axios consuming API REST Demo</title>
+    </head>
+    
+    <body>
+       
+        <div>
+            <button onclick="getTareas()">Get Tareas</button>
+        </div>
+    
+        <div>
+            <h1>Tareas</h1>
+            <ul> </ul>
+       
+        </div>
+
+        <div>
+            <form id="crear">
+                <input type="text" id="id" placeholder="id">
+                <input type="text" id="name" placeholder="name">
+                <input type="text" id="puntos" placeholder="puntos">
+                <input type="text" id="materia" placeholder="materia">
+                <input type="date" id="fecha" value="2021-03-25" min="2021-01-01" max="2021-12-31">
+                <button onclick="crearTarea()">Crear Tarea</button>
+            </form>
+        </div>
+        <script src="./node_modules/axios/dist/axios.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+    
+
+</HTML>
